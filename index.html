@@ -186,6 +186,25 @@
             line-height: 1.5;
         }
 
+        .contact {
+            margin-top: 48px;
+            padding-top: 36px;
+            border-top: 1px solid var(--rule);
+            display: flex;
+            gap: 24px;
+            font-size: 0.85rem;
+        }
+
+        .contact a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .contact a:hover {
+            color: var(--text);
+        }
+
         @media (max-width: 520px) {
             .container { padding: 48px 20px 40px; }
             h1 { font-size: 1.7rem; }
@@ -250,6 +269,12 @@
                 <img src="images/seoul2.jpg" alt="Seoul — Cheonggyecheon area">
             </div>
             <p class="photo-caption">Images taken from my last time in Seoul to denote my enthusiasm for ICML 2026 taking place in Seoul.</p>
+        </div>
+
+        <div class="contact">
+            <a href="https://x.com/jchudnov">Twitter</a>
+            <a href="https://www.linkedin.com/in/jessica-chudnovsky/">LinkedIn</a>
+            <a href="mailto:jchud@cs.stanford.edu">jchud@cs.stanford.edu</a>
         </div>
     </div>
 </body>
