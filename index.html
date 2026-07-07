@@ -82,6 +82,20 @@
             line-height: 1.5;
         }
 
+        .notice strong {
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        .notice em {
+            color: var(--text);
+        }
+
+        .notice a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
         .section-label {
             font-size: 0.72rem;
             font-weight: 500;
@@ -182,33 +196,22 @@
 <body>
     <div class="container">
         <h1>ICML 2026</h1>
-        <p class="byline">Papers by <a href="https://github.com/JessChud">Jessica Chudnovsky</a></p>
+        <p class="byline">Papers presented by <a href="https://github.com/JessChud">Jessica Chudnovsky</a> at ICML 2026</p>
 
         <div class="notice">
-            Presentation details coming soon — dates, times, and session locations will be updated once the ICML 2026 schedule is finalized.
+            <strong>Presentation schedule</strong><br>
+            <em>Internal Data Repetition Destroys Language Models</em> — Oral presentation at the <a href="#">FoGen: Foundations of Deep Generative Models</a> workshop, 2026. Date, time, and room TBD.<br><br>
+            Additional presentation details (posters, sessions) will be updated once the full ICML 2026 schedule is finalized.
         </div>
 
         <div class="section-label">Papers</div>
 
         <div class="paper">
             <div class="paper-title">
-                <a href="https://arxiv.org/abs/2603.06603">Scale Dependent Data Duplication</a>
-            </div>
-            <div class="paper-authors">
-                Joshua Kazdan, Noam Levi, Rylan Schaeffer, Jessica Chudnovsky, Abhay Puri, Bo He, Mehmet Donmez, Sanmi Koyejo, David Donoho
-            </div>
-            <div class="paper-links">
-                <a href="https://arxiv.org/abs/2603.06603">arXiv</a>
-                <a href="https://x.com/jchudnov/status/2073798603001180596">Tweeprint</a>
-            </div>
-        </div>
-
-        <div class="paper">
-            <div class="paper-title">
                 <a href="https://arxiv.org/abs/2603.06612">Consensus is Not Verification: Why Crowd Wisdom Strategies Fail for LLM Truthfulness</a>
             </div>
             <div class="paper-authors">
-                Yegor Denisov-Blanch, Joshua Kazdan, Jessica Chudnovsky, Rylan Schaeffer, Sheng Guan, Soji Adeshina, Sanmi Koyejo
+                Yegor Denisov-Blanch*, Joshua Kazdan*, Jessica Chudnovsky, Rylan Schaeffer, Sheng Guan, Soji Adeshina, Sanmi Koyejo
             </div>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2603.06612">arXiv</a>
@@ -218,10 +221,23 @@
 
         <div class="paper">
             <div class="paper-title">
+                <a href="https://arxiv.org/abs/2603.06603">Scale Dependent Data Duplication</a>
+            </div>
+            <div class="paper-authors">
+                Joshua Kazdan*, Noam Levi*, Rylan Schaeffer, Jessica Chudnovsky, Abhay Puri, Bo He, Mehmet Donmez, Sanmi Koyejo, David Donoho
+            </div>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2603.06603">arXiv</a>
+                <a href="https://x.com/jchudnov/status/2073798603001180596">Tweeprint</a>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="paper-title">
                 <a href="https://arxiv.org/abs/2606.24998">Internal Data Repetition Destroys Language Models</a>
             </div>
             <div class="paper-authors">
-                Jessica Chudnovsky, Joshua Kazdan, Noam Levi, Rylan Schaeffer, Yegor Denisov-Blanch, Bo He, Mehmet Donmez, Sanmi Koyejo, David Donoho
+                Jessica Chudnovsky*, Joshua Kazdan*, Noam Levi, Rylan Schaeffer, Yegor Denisov-Blanch, Bo He, Mehmet Donmez, Sanmi Koyejo, David Donoho
             </div>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2606.24998">arXiv</a>
