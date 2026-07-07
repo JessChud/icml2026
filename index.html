@@ -143,9 +143,14 @@
         }
 
         .paper-presenting {
-            font-size: 0.82rem;
+            font-size: 0.8rem;
             color: var(--accent);
+            background: color-mix(in srgb, var(--accent) 8%, var(--ground));
+            border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--ground));
+            border-radius: 6px;
+            padding: 8px 12px;
             margin-bottom: 12px;
+            display: inline-block;
         }
 
         .paper-links {
