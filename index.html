@@ -6,176 +6,189 @@
     <title>Jessica Chudnovsky — ICML 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --ground: #FFFFFF;
+            --text: #1B1B18;
+            --secondary: #6E6E68;
+            --accent: #3B5068;
+            --surface: #F6F5F3;
+            --rule: #E6E5E2;
+            --caption: #96958F;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --ground: #131311;
+                --text: #E5E4E0;
+                --secondary: #9A9990;
+                --accent: #8BB0CE;
+                --surface: #1D1D1A;
+                --rule: #2A2A26;
+                --caption: #7A796F;
+            }
+        }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Inter', sans-serif;
-            color: #1a1a1a;
-            background: #fff;
+            font-family: 'Inter', -apple-system, system-ui, sans-serif;
+            color: var(--text);
+            background: var(--ground);
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
         }
 
         .container {
-            max-width: 720px;
+            max-width: 680px;
             margin: 0 auto;
-            padding: 80px 24px 60px;
+            padding: 72px 24px 56px;
         }
 
         h1 {
-            font-family: 'EB Garamond', serif;
-            font-size: 2.4rem;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-bottom: 8px;
+            font-family: 'EB Garamond', Georgia, serif;
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            margin-bottom: 6px;
         }
 
-        .subtitle {
-            font-size: 1.05rem;
-            color: #555;
+        .byline {
+            font-size: 0.95rem;
+            color: var(--secondary);
             margin-bottom: 48px;
         }
 
-        .subtitle a {
-            color: #555;
-            text-decoration: underline;
+        .byline a {
+            color: var(--secondary);
+            text-decoration-color: var(--rule);
             text-underline-offset: 3px;
+            transition: color 0.15s, text-decoration-color 0.15s;
         }
 
-        .subtitle a:hover {
-            color: #1a1a1a;
+        .byline a:hover {
+            color: var(--text);
+            text-decoration-color: var(--text);
         }
 
-        .presentation-info {
-            background: #f8f8f8;
-            border-left: 3px solid #ccc;
-            padding: 16px 20px;
-            margin-bottom: 56px;
-            font-size: 0.92rem;
-            color: #666;
+        .notice {
+            background: var(--surface);
+            border-left: 2.5px solid var(--accent);
+            padding: 14px 18px;
+            margin-bottom: 52px;
+            font-size: 0.88rem;
+            color: var(--secondary);
+            line-height: 1.5;
         }
 
-        .presentation-info strong {
-            color: #1a1a1a;
-        }
-
-        h2 {
-            font-family: 'EB Garamond', serif;
-            font-size: 1.6rem;
-            font-weight: 600;
-            margin-bottom: 32px;
-            letter-spacing: -0.01em;
+        .section-label {
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--caption);
+            margin-bottom: 28px;
         }
 
         .paper {
-            margin-bottom: 40px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid #eee;
+            margin-bottom: 36px;
+            padding-bottom: 36px;
+            border-bottom: 1px solid var(--rule);
         }
 
-        .paper:last-child {
+        .paper:last-of-type {
             border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
 
         .paper-title {
-            font-family: 'EB Garamond', serif;
-            font-size: 1.25rem;
-            font-weight: 600;
-            line-height: 1.4;
-            margin-bottom: 12px;
+            font-family: 'EB Garamond', Georgia, serif;
+            font-size: 1.18rem;
+            font-weight: 400;
+            line-height: 1.45;
+            margin-bottom: 8px;
         }
 
         .paper-title a {
-            color: #1a1a1a;
+            color: var(--text);
             text-decoration: none;
-            border-bottom: 1px solid #ccc;
-            transition: border-color 0.2s;
+            transition: color 0.15s;
         }
 
         .paper-title a:hover {
-            border-color: #1a1a1a;
+            color: var(--accent);
         }
 
         .paper-authors {
-            font-size: 0.88rem;
-            color: #777;
-            margin-bottom: 14px;
+            font-size: 0.82rem;
+            color: var(--secondary);
+            line-height: 1.5;
+            margin-bottom: 12px;
         }
 
         .paper-links {
             display: flex;
-            gap: 16px;
-            font-size: 0.85rem;
+            gap: 18px;
+            font-size: 0.82rem;
         }
 
         .paper-links a {
-            color: #555;
+            color: var(--accent);
             text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.2s, color 0.2s;
+            transition: opacity 0.15s;
         }
 
         .paper-links a:hover {
-            color: #1a1a1a;
-            border-bottom-color: #1a1a1a;
-        }
-
-        .paper-links a::before {
-            margin-right: 4px;
+            opacity: 0.7;
         }
 
         .photos {
-            margin-top: 64px;
-            padding-top: 48px;
-            border-top: 1px solid #eee;
+            margin-top: 56px;
+            padding-top: 44px;
+            border-top: 1px solid var(--rule);
         }
 
         .photo-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            margin-bottom: 14px;
+            gap: 12px;
+            margin-bottom: 12px;
         }
 
         .photo-grid img {
             width: 100%;
-            height: 280px;
+            aspect-ratio: 4 / 3;
             object-fit: cover;
-            border-radius: 4px;
+            border-radius: 3px;
+            display: block;
         }
 
         .photo-caption {
-            font-size: 0.84rem;
-            color: #999;
+            font-size: 0.78rem;
+            color: var(--caption);
             font-style: italic;
-            text-align: center;
+            line-height: 1.5;
         }
 
-        @media (max-width: 560px) {
+        @media (max-width: 520px) {
             .container { padding: 48px 20px 40px; }
-            h1 { font-size: 1.8rem; }
-            .photo-grid {
-                grid-template-columns: 1fr;
-            }
-            .photo-grid img {
-                height: 240px;
-            }
+            h1 { font-size: 1.7rem; }
+            .photo-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>ICML 2026</h1>
-        <p class="subtitle">Papers by <a href="https://github.com/JessChud">Jessica Chudnovsky</a></p>
+        <p class="byline">Papers by <a href="https://github.com/JessChud">Jessica Chudnovsky</a></p>
 
-        <div class="presentation-info">
-            <strong>Presentation details coming soon.</strong><br>
-            Dates, times, and session locations will be updated once the ICML 2026 schedule is finalized.
+        <div class="notice">
+            Presentation details coming soon — dates, times, and session locations will be updated once the ICML 2026 schedule is finalized.
         </div>
 
-        <h2>Papers</h2>
+        <div class="section-label">Papers</div>
 
         <div class="paper">
             <div class="paper-title">
@@ -218,8 +231,8 @@
 
         <div class="photos">
             <div class="photo-grid">
-                <img src="images/seoul1.jpg" alt="Jessica in Seoul with Line Friends character">
-                <img src="images/seoul2.jpg" alt="Jessica in Seoul near Cheonggyecheon stream">
+                <img src="images/seoul1.jpg" alt="Seoul — Line Friends store">
+                <img src="images/seoul2.jpg" alt="Seoul — Cheonggyecheon area">
             </div>
             <p class="photo-caption">Images taken from my last time in Seoul to denote my enthusiasm for ICML 2026 taking place in Seoul.</p>
         </div>
