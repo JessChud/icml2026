@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica Chudnovsky — ICML 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+            background: #fff;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 80px 24px 60px;
+        }
+
+        h1 {
+            font-family: 'EB Garamond', serif;
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: #555;
+            margin-bottom: 48px;
+        }
+
+        .subtitle a {
+            color: #555;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .subtitle a:hover {
+            color: #1a1a1a;
+        }
+
+        .presentation-info {
+            background: #f8f8f8;
+            border-left: 3px solid #ccc;
+            padding: 16px 20px;
+            margin-bottom: 56px;
+            font-size: 0.92rem;
+            color: #666;
+        }
+
+        .presentation-info strong {
+            color: #1a1a1a;
+        }
+
+        h2 {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 32px;
+            letter-spacing: -0.01em;
+        }
+
+        .paper {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .paper:last-child {
+            border-bottom: none;
+        }
+
+        .paper-title {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
+
+        .paper-title a {
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 1px solid #ccc;
+            transition: border-color 0.2s;
+        }
+
+        .paper-title a:hover {
+            border-color: #1a1a1a;
+        }
+
+        .paper-authors {
+            font-size: 0.88rem;
+            color: #777;
+            margin-bottom: 14px;
+        }
+
+        .paper-links {
+            display: flex;
+            gap: 16px;
+            font-size: 0.85rem;
+        }
+
+        .paper-links a {
+            color: #555;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .paper-links a:hover {
+            color: #1a1a1a;
+            border-bottom-color: #1a1a1a;
+        }
+
+        .paper-links a::before {
+            margin-right: 4px;
+        }
+
+        .photos {
+            margin-top: 64px;
+            padding-top: 48px;
+            border-top: 1px solid #eee;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 14px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .photo-caption {
+            font-size: 0.84rem;
+            color: #999;
+            font-style: italic;
+            text-align: center;
+        }
+
+        @media (max-width: 560px) {
+            .container { padding: 48px 20px 40px; }
+            h1 { font-size: 1.8rem; }
+            .photo-grid {
+                grid-template-columns: 1fr;
+            }
+            .photo-grid img {
+                height: 240px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ICML 2026</h1>
+        <p class="subtitle">Papers by <a href="https://github.com/JessChud">Jessica Chudnovsky</a></p>
+
+        <div class="presentation-info">
+            <strong>Presentation details coming soon.</strong><br>
+            Dates, times, and session locations will be updated once the ICML 2026 schedule is finalized.
+        </div>
+
+        <h2>Papers</h2>
+
+        <div class="paper">
+            <div class="paper-title">
+                <a href="https://arxiv.org/abs/2603.06603">Scale Dependent Data Duplication</a>
+            </div>
+            <div class="paper-authors">
+                Joshua Kazdan, Noam Levi, Rylan Schaeffer, Jessica Chudnovsky, Abhay Puri, Bo He, Mehmet Donmez, Sanmi Koyejo, David Donoho
+            </div>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2603.06603">arXiv</a>
+                <a href="https://x.com/jchudnov/status/2073798603001180596">Tweeprint</a>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="paper-title">
+                <a href="https://arxiv.org/abs/2603.06612">Consensus is Not Verification: Why Crowd Wisdom Strategies Fail for LLM Truthfulness</a>
+            </div>
+            <div class="paper-authors">
+                Yegor Denisov-Blanch, Joshua Kazdan, Jessica Chudnovsky, Rylan Schaeffer, Sheng Guan, Soji Adeshina, Sanmi Koyejo
+            </div>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2603.06612">arXiv</a>
+                <a href="https://x.com/jchudnov/status/2073551049479389407">Tweeprint</a>
+            </div>
+        </div>
+
+        <div class="paper">
+            <div class="paper-title">
+                <a href="https://arxiv.org/abs/2606.24998">Internal Data Repetition Destroys Language Models</a>
+            </div>
+            <div class="paper-authors">
+                Jessica Chudnovsky, Joshua Kazdan, Noam Levi, Rylan Schaeffer, Yegor Denisov-Blanch, Bo He, Mehmet Donmez, Sanmi Koyejo, David Donoho
+            </div>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2606.24998">arXiv</a>
+                <a href="https://x.com/jchudnov/status/2031480374879191255">Tweeprint</a>
+            </div>
+        </div>
+
+        <div class="photos">
+            <div class="photo-grid">
+                <img src="images/seoul1.jpg" alt="Jessica in Seoul with Line Friends character">
+                <img src="images/seoul2.jpg" alt="Jessica in Seoul near Cheonggyecheon stream">
+            </div>
+            <p class="photo-caption">Images taken from my last time in Seoul to denote my enthusiasm for ICML 2026 taking place in Seoul.</p>
+        </div>
+    </div>
+</body>
+</html>
